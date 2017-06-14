@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+
 * {
   box-sizing: border-box;
   text-align: center;
@@ -6,59 +8,46 @@
 a.anchor {
   display: block;
   position: relative;
-  top: -55px;
+  top: -35px;
   visibility: hidden;
-}
-
-.section {
-  position: relative;
-}
-
-.section:target {
-  padding-top: 60px;
-}
-
-.area {
-  padding: 15px 25% 0 25%;
-}
-
- footer {
-  background-color: black;
-  color: white;
-  font-size: 14px;
-  left: 0;
-  bottom: 0;
-  height: 40px;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: bottom;
-  align-items: center;
 }
 
 .bg-color {
   background-color: rgb(223, 223, 223);
 }
 
-#intro-image {
-  filter: blur(2px);
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-    width: 100%;
-
-  /*    background-size: cover; */
-  /*    background-position: 50% 50%; */
-  /*    margin: auto; */
-  /*    max-height: auto; */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
- input[type=text],
-select,
-textarea {
+footer {
+  background-color: black;
+  color: white;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://dl.dropbox.com/s/wpa6mxke0gab5en/thumb-1920-297030.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+h2 {
+  font-size: 2rem;
+}
+
+input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -66,7 +55,7 @@ textarea {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: verticlel
+  resize: verticlel;
 }
 
 input[type=submit] {
@@ -82,26 +71,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.intro-text {
-  width: 100%;
-  color: white;
-  padding-top: 150px;
-}
-
-.project-list {
-  list-style-type: none;
-  padding: 0;
-  columns: 2;
-}
-
-.project-media {
-  display: inline-block;
-  padding: 30px 15px 0;
-  height: 550px;
-  width: 100%;
-  background-color: rgb(200, 200, 200);
-}
-
 input#contact-name {
   width: 45%;
   float: left;
@@ -112,26 +81,69 @@ input#contact-email {
   float: right;
 }
 
-.skill {
+main {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.project-media {
+  padding: 30px 15px 0;
+  height: 550px;
+  width: 100%;
+  background-color: rgb(200, 200, 200);
+}
+
+.section {
+  display: inline-block;
+  width: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 15px;
+}
+
+.sm {
+  margin: 1rem .5rem;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+ul {
   list-style-type: none;
   padding: 0;
+  display: block;
+}
+
+#project-layout {
+  columns: 2;
+}
+
+#skill-layout {
   columns: 3;
 }
 
-#skills {
-  background-color: white;
-}
-
- @media only screen and (max-width: 600px) {
-  [class="skill"] {
+@media only screen and (max-width: 768px) {
+  #skill-layout {
     columns: 2;
   }
 
-  [class="project-list"] {
+  #project-layout {
     columns: 1;
   }
 
-   input#contact-name {
+  input#contact-name {
     width: 100%;
   }
 

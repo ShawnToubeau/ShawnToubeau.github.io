@@ -2,14 +2,13 @@
 <html>
 
 <head>
-  <title>Shawn Toubeau</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="portfolio.css" />
-  <script src="portfolio.js"></script>
-<!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -18,16 +17,18 @@
     <div class="container">
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-          <span class="sr-only">Toggle Navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
         <a class="navbar-brand" href="#home">Home</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="hidden"><a href="#page-top"></a></li>
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -37,28 +38,25 @@
     </div>
   </nav>
 
-  <section>
+  <header>
     <a class="anchor" id="home"></a>
-    <div id="intro-image">
-      <img src="https://dl.dropbox.com/s/bnewcu1kpr0hu3q/imac_apple_computer_table_cup_notebook_109176_1600x900.jpg?dl=0" alt="Header Background">
-    </div>
-
-    <div class="intro-text" style="padding-bottom: 200px;">
+    <div class="title">
       <h1>Shawn Toubeau</h1>
-      <h2>Student</h2>
+      <p>Student</p>
     </div>
-    <div class="bg-color area" style="padding-bottom: 15px;">
-      <a class="anchor" id="about"></a>
-      <h1>About Me</h1>
-      <p>Hey, I'm a student studying computer science at Wentworth Institute of Technology. This is my portfolio project for freeCodeCamp's second project. I'm open to learning new things and thought I would give HTML and CSS a try!</p>
-    </div>
+  </header>
+
+  <section class="section bg-color">
+    <a class="anchor" id="about"></a>
+    <h1>About Me</h1>
+    <p>Hey, I'm a student studying computer science at Wentworth Institute of Technology. This is my portfolio project for freeCodeCamp's second project. I'm open to learning new things and thought I would give HTML and CSS a try!</p>
   </section>
 
-  <section class="area" style="background-color: white;">
+  <section class="section">
     <a class="anchor" id="skills"></a>
     <div>
       <h1>Skills</h1>
-      <ul class="skill">
+      <ul id="skill-layout">
         <li>
           <img style="max-width: 125px;" src="https://dl.dropbox.com/s/z4nwjhl37ato9hs/java.png" alt="Java Logo">
         </li>
@@ -72,10 +70,10 @@
     </div>
   </section>
 
-  <section class="area bg-color" style="padding-left: 5%; padding-right: 5%;">
+  <section class="section bg-color" style="padding-left: 5%; padding-right: 5%;">
     <a class="anchor" id="projects"></a>
-    <h1 style="padding-bottom: 20px;">Projects</h1>
-    <ul class="project-list" style="padding-bottom: 15px;">
+    <h1>Projects</h1>
+    <ul id="project-layout">
       <li>
         <p class="project-media">
           <img style="max-width: 100%;" src="https://dl.dropbox.com/s/uxq92c1mh7bo91g/Hackathon.jpg" alt="Hackathon Team"> I assisted in organizing Wentworth's first ever hackathon, HackWITUs. Our Computer Science Society successfuly raised money from
@@ -86,15 +84,15 @@
       <li>
         <p class="project-media">
           <video style="max-width: 100%;" controls muted loop>
-      <source src="https://dl.dropbox.com/s/pt9wdt5bw0a32qe/VID_20160817_141232-2.mp4" type="video/mp4">
-    </video> One of my school projects consisted with working on a NASA project called HUNCH (High School Students United with NASA to Create Hardware). We developed a micro-gravity scale that has the potential to weigh objects in space.
+    <source src="https://dl.dropbox.com/s/pt9wdt5bw0a32qe/VID_20160817_141232-2.mp4" type="video/mp4"></source>
+  </video> One of my school projects consisted with working on a NASA project called HUNCH (High School Students United with NASA to Create Hardware). We developed a micro-gravity scale that has the potential to weigh objects in space.
         </p>
       </li>
 
       <li>
         <p class="project-media">
           <video style="max-width: 100%;" controls muted loop> <source src="https://dl.dropbox.com/s/dnia7lhk32m6i3w/VID_20160218_110836%281%29-2.mp4?dl=0" type="video/mp4">
-      </video> This is one of the robots my high school robotics club built. We competed in First Robotics Competition where our student run team built a robot from scratch and competed against other teams.
+    </video> This is one of the robots my high school robotics club built. We competed in First Robotics Competition where our student run team built a robot from scratch and competed against other teams.
         </p>
       </li>
 
@@ -104,24 +102,38 @@
     </ul>
   </section>
 
-  <section>
+  <section class="section">
     <a class="anchor" id="contact"></a>
     <h1>Contact</h1>
-    <form action="/action_page.php" style="padding: 15px 12.5%">
+    <form action="https://formspree.io/shawntoubeau@gmail.com" method="post">
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="text" name="email" placeholder="Your Email">
+      <textarea name="Subject" placeholder="Write something.." style="height:200px"></textarea>
 
-      <input id="contact-name" type="text" name="name" placeholder="Your Name">
-
-      <input id="contact-email" type="text" name="email" placeholder="Your Email">
-
-      <input type="text" id="contact-subject" name="subject" placeholder="Subject">
-
-      <textarea id="contact-message" name="message" placeholder="Your Message" style="height: 200px"></textarea>
-
-      <input type="submit" value="Send"></form>
+      <input type="submit" value="Send">
+    </form>
   </section>
 
   <footer>
-    <p style="margin: auto;">Copyright 2017 - Shawn Toubeau</p>
+    <ul>
+      <li class="sm">
+        <a href="mailto:toubeaus@wit.edu" rel="nofollow" target="_blank" title="Send me an email" <i class="fa fa-envelope"></i>
+        </a>
+      </li>
+      <li class="sm">
+        <a href="https://www.linkedin.com/in/shawn-toubeau/" rel="nofollow" target="_blank" title="Connect with me on LinkedIn" <i class="fa fa-linkedin-square"></i>
+        </a>
+      </li>
+      <li class="sm">
+        <a href="https://github.com/ShawnToubeau" rel="nofollow" target "_blank" title="Follow me on Git" <i class="fa fa-github"></i>
+        </a>
+      </li>
+      <li class="sm">
+        <a href="https://www.freecodecamp.com/shawntoubeau" rel="nofollow" target="_blank" title="View my profile" <i class="fa fa-free-code-camp"></i>
+        </a>
+      </li>
+    </ul>
+    <p>© Shawn Toubeau 2017</p>
   </footer>
 
 </body>
