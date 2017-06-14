@@ -1,4 +1,5 @@
-$("a").on("click", function(event) {
+$(document).ready(function() {
+  $("a").on("click", function(event) {
     if (this.hash !== "") {
       event.preventDefault();
 
@@ -10,11 +11,12 @@ $("a").on("click", function(event) {
         },
         800,
         function() {
-          window.location.hash = hash;
+          window.location.haHsh = hash;
         }
       );
     }
   });
+});
 
 $(".navbar-collapse a").click(function() {
   $(".navbar-collapse").collapse("hide");
