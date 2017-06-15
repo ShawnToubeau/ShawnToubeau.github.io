@@ -22,7 +22,7 @@ footer {
   color: white;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 105px;
   width: 100%;
   position: relative;
   display: block;
@@ -60,31 +60,21 @@ input[type=submit] {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
+  box-shadow: 1px 1px 3px #888888;
 }
 
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-input#contact-name {
-  width: 45%;
-  float: left;
-}
-
-input#contact-email {
-  width: 45%;
-  float: right;
-}
-
-main {
-  max-width: 500px;
-  margin: 20px auto;
+.navbar-header{
+    margin-left: -6% !important;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 16px;
 }
 
 .project-media {
@@ -105,7 +95,8 @@ p {
 .sm {
   margin: 1rem .5rem;
   display: inline-block;
-  font-size: 25px;
+  font-size: 30px;
+  padding: 0px 7px;
 }
 
 .title {
@@ -140,11 +131,7 @@ ul {
     columns: 1;
   }
 
-  input#contact-name {
-    width: 100%;
-  }
-
-  input#contact-email {
-    width: 100%;
+  .navbar-header{
+      margin-left: 0 !important;
   }
 }
