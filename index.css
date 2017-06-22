@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: auto;
 }
 
 a.anchor {
@@ -29,6 +28,7 @@ section {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 15px;
+  overflow: hidden;
 }
 
 header {
