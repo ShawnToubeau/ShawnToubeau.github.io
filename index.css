@@ -196,6 +196,6 @@ ul {
   }
 
   .navbar-brand {
-    margin-left: 0;
+    margin-left: -50 !important;
   }
 }
