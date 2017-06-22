@@ -194,4 +194,8 @@ ul {
   .navbar-header {
     margin-left: -6% !important;
   }
+
+  .navbar-brand {
+    margin-left: 0;
+  }
 }
